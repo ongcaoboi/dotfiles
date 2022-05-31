@@ -1,4 +1,4 @@
-![cover](./images/cover.png)
+![cover](./images/cover-head.png)
 
 # My Dotfiles
 
