@@ -1,7 +1,0 @@
-{
-		"coc.source.file.shortcut": "File",
-		"coc.source.around.shortcut": "?",
-    "omnisharp.version": "v1.37.3",
-    "omnisharp.trace.server": "information",
-    "omnisharp.debug.server": true
-}

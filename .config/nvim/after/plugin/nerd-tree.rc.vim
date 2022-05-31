@@ -1,3 +1,6 @@
+"if !exists('g:nerdtree')
+"  finish
+"endif
 
 " F5 to toggle 
 map <silent> <F5> :NERDTreeToggle<CR>
@@ -60,3 +63,4 @@ let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
 
 let NERDTreeShowHidden=1
+
