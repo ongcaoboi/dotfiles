@@ -59,9 +59,9 @@ nvim_lsp.emmet_ls.setup {}
 
 nvim_lsp.html.setup {}
 
-nvim_lsp.jsonls.setup {}
-
 nvim_lsp.cssls.setup {}
+
+--nvim_lsp.cssmodules_ls.setup {}
 
 -- nvim_lsp.csharp_ls.setup {}
 

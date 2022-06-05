@@ -10,6 +10,9 @@ call plug#begin()
 if has('nvim')
     "color theme
   Plug 'morhetz/gruvbox'
+  Plug 'bluz71/vim-moonfly-colors'
+  Plug 'arcticicestudio/nord-vim'
+
   Plug 'windwp/nvim-autopairs'
 
   Plug 'neovim/nvim-lspconfig'
@@ -45,6 +48,8 @@ if has('nvim')
   Plug 'ryanoasis/vim-devicons'
   Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
   Plug 'unkiwii/vim-nerdtree-sync'
+  
+  Plug 'prettier/vim-prettier', { 'do': 'npm install --frozen-lockfile --production' }
 endif
 
 call plug#end()

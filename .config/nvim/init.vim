@@ -1,6 +1,5 @@
 " Basic {
 " ----------------------------------------
-
 autocmd!
 
 scriptencoding utf-8
@@ -73,14 +72,15 @@ runtime ./maps.vim
 " Syntax theme {
 " ----------------------------------------
 
-set termguicolors
 syntax enable
+set termguicolors
 set background=dark
-colorscheme gruvbox
 set cursorline
 
-let g:airline_theme='gruvbox'
+colorscheme gruvbox
 
+
+" Set background transparent
 hi Normal ctermbg=NONE guibg=NONE
 
 " }
