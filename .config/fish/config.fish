@@ -10,10 +10,16 @@ set -g theme_hide_hostname no
 set -g theme_hostname always
 
 # Aliases
+if type -q exa
+  alias ll "exa -l -g --icons"
+  alias lla "ll -a"
+end
 alias ls "ls -p -G"
 alias la "ls -A"
 alias ll "ls -l"
 alias lla "ll -A"
+
+alias cls "clear"
 command -qv nvim && alias vim nvim
 
 set -gx EDITOR nvim
@@ -37,4 +43,15 @@ set __fish_git_prompt_char_stashstate '↩'
 set __fish_git_prompt_char_upstream_ahead '↑'
 set __fish_git_prompt_char_upstream_behind '↓'
 
+set -g theme_hide_hostname no
 
+function fish_prompt
+    #set_color 18974e
+    #printf (date "+$c2%H$c0:$c2%M$c0:$c2%S>")
+    set_color f2777a
+    printf '%s@%s%s%s%s> ' (whoami) (set_color ff8a00) (hostname | cut -d . -f 1) \
+        (set_color $fish_color_cwd) (prompt_pwd)
+    set_color $fish_color_error
+    printf '%s ' (__fish_git_prompt)
+    set_color normal
+end
