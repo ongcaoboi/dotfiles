@@ -9,7 +9,9 @@ call plug#begin()
 
 if has('nvim')
     "color theme
-  Plug 'morhetz/gruvbox'
+  "Plug 'morhetz/gruvbox'
+  Plug 'luisiacc/gruvbox-baby', {'branch': 'main'}
+
   Plug 'bluz71/vim-moonfly-colors'
   Plug 'arcticicestudio/nord-vim'
 
