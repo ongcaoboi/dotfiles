@@ -89,7 +89,8 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " }
 
-
+" Set background transparent
+hi Normal ctermbg=NONE guibg=NONE
 hi  SignColumn ctermbg=NONE guibg=NONE 
 hi  NormalNC ctermbg=NONE guibg=NONE
 hi  Comment ctermbg=NONE guibg=NONE
@@ -111,3 +112,4 @@ hi  LineNr ctermbg=NONE guibg=NONE
 hi  NonText ctermbg=NONE guibg=NONE
 hi  CursorLineNr ctermbg=NONE guibg=NONE
 hi  EndOfBuffer ctermbg=NONE guibg=NONE
+" }
