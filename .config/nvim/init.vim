@@ -77,14 +77,7 @@ set termguicolors
 set background=dark
 set cursorline
 
-colorscheme gruvbox
-
-
-" Set background transparent
-hi Normal ctermbg=NONE guibg=NONE
-
-" }
-
+colorscheme gruvbox-baby
 
 " Orther {
 
@@ -95,3 +88,26 @@ set exrc
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " }
+
+
+hi  SignColumn ctermbg=NONE guibg=NONE 
+hi  NormalNC ctermbg=NONE guibg=NONE
+hi  Comment ctermbg=NONE guibg=NONE
+hi  Constant ctermbg=NONE guibg=NONE
+hi  Special ctermbg=NONE guibg=NONE
+hi  Identifier ctermbg=NONE guibg=NONE
+hi  Statement ctermbg=NONE guibg=NONE
+hi  PreProc ctermbg=NONE guibg=NONE
+hi  Type ctermbg=NONE guibg=NONE
+hi  Underlined ctermbg=NONE guibg=NONE
+hi  Todo ctermbg=NONE guibg=NONE
+hi  String ctermbg=NONE guibg=NONE
+hi  Function ctermbg=NONE guibg=NONE
+hi  Conditional ctermbg=NONE guibg=NONE
+hi  Repeat ctermbg=NONE guibg=NONE
+hi  Operator ctermbg=NONE guibg=NONE
+hi  Structure ctermbg=NONE guibg=NONE
+hi  LineNr ctermbg=NONE guibg=NONE
+hi  NonText ctermbg=NONE guibg=NONE
+hi  CursorLineNr ctermbg=NONE guibg=NONE
+hi  EndOfBuffer ctermbg=NONE guibg=NONE
