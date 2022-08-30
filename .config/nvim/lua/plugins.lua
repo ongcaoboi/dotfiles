@@ -45,6 +45,13 @@ packer.startup(function(use)
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim'
   }
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
 
   use 'lewis6991/gitsigns.nvim'
   use 'dinhhuy258/git.nvim' -- git status for neovim
