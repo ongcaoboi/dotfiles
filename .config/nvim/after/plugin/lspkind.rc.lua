@@ -1,12 +1,11 @@
-local status, lualine = pcall(require, 'lspkind')
+local status, lspkind = pcall(require, 'lspkind')
 if (not status) then return end
-
-local lspkind = require'lspkind'
 
 lspkind.init({
   -- enables text annotations
   --
   -- default: true
+  -- options: 'text', 'text_symbol', 'symbol_text', 'symbol'
   mode = 'symbol_text',
 
   -- default symbol map
