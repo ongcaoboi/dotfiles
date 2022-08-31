@@ -14,6 +14,8 @@ packer.startup(function(use)
   --  }
   use 'ellisonleao/gruvbox.nvim'
   use 'luisiacc/gruvbox-baby'
+  use 'wittyjudge/gruvbox-material.nvim'
+
   use 'hoob3rt/lualine.nvim' -- Statusline
   use 'nvim-lua/plenary.nvim' -- Common utilities
 
@@ -52,7 +54,12 @@ packer.startup(function(use)
     },
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
-
+  use 'lukas-reineke/indent-blankline.nvim'
   use 'lewis6991/gitsigns.nvim'
   use 'dinhhuy258/git.nvim' -- git status for neovim
+  use 'numToStr/Comment.nvim'
+
+  -- Debug
+  use 'mfussenegger/nvim-dap'
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 end)

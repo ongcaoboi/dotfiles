@@ -10,7 +10,7 @@ keymap.set('n', '-', '<C-x>')
 -- Delete a work backwards
 keymap.set('n', 'dw', 'vb"_d')
 
--- Select all 
+-- Select all
 keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 -- New tab
@@ -23,7 +23,7 @@ keymap.set('n', '<Tab>', ':tabnext<CR>')
 -- Previous tab
 keymap.set('n', '<S-Tab>', ':tabprevious<CR>')
 
--- Split window 
+-- Split window
 keymap.set('n', 'ss', ':split<CR><C-w>w')
 keymap.set('n', 'sv', ':vsplit<CR><C-w>w')
 
@@ -38,8 +38,14 @@ keymap.set('', 'sk', '<C-w>k')
 keymap.set('', 'sj', '<C-w>j')
 keymap.set('', 'sl', '<C-w>l')
 
--- Resize window 
+-- Resize window
 keymap.set('n', '<C-w><left>', '<C-w><')
 keymap.set('n', '<C-w><right>', '<C-w>>')
 keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
+
+-- Move line
+keymap.set('n', '<A-j>', ':m .+1<CR>==')
+keymap.set('n', '<A-k>', ':m .-2<CR>==')
+keymap.set('v', '<A-j>', ":m '>+1<CR>gv=gv")
+keymap.set('v', '<A-k>', ":m '<-2<CR>gv=gv")

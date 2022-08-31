@@ -84,13 +84,18 @@ nvim_lsp.util.default_config = vim.tbl_deep_extend(
 
 nvim_lsp.tsserver.setup {
   filetypes = {
-    'javascript',
-    'javascriptreact',
-    'javascript.jsx',
     'typescript',
     'typescriptreact',
     'typescript.tsx'
   },
+}
+
+nvim_lsp.eslint.setup {
+  filetypes = {
+    'javascript',
+    'javascriptreact',
+    'javascript.jsx',
+  }
 }
 
 -- Config lua language

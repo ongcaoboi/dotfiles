@@ -11,6 +11,7 @@ lspconfig.setup {
     "tailwindcss",
     "cssls",
     "emmet_ls",
-    "html"
+    "html",
+    "eslint"
   },
 }
