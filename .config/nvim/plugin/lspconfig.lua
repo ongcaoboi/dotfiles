@@ -84,6 +84,9 @@ nvim_lsp.util.default_config = vim.tbl_deep_extend(
 
 nvim_lsp.tsserver.setup {
   filetypes = {
+    'javascript',
+    'javascriptreact',
+    'javascript.jsx',
     'typescript',
     'typescriptreact',
     'typescript.tsx'
@@ -134,7 +137,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 )
 
 -- Diagnostic symbols in the sign column (gutter)
-local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+local signs = { Error = "✘", Warn = "", Hint = "", Info = "" }
 for type, icon in pairs(signs) do
   local hl = "DiagnosticSign" .. type
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
