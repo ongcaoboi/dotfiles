@@ -101,6 +101,8 @@ nvim_lsp.eslint.setup {
   }
 }
 
+nvim_lsp.csharp_ls.setup {}
+
 -- Config lua language
 nvim_lsp.sumneko_lua.setup {
   settings = {
